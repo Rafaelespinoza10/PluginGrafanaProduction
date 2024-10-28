@@ -15,17 +15,17 @@ Asegúrate de tener instalados los siguientes programas:
 
 1. Clona este repositorio:
    ```bash
-   git clone <URL_DEL_REPOSITORIO>
-   cd <NOMBRE_DEL_REPOSITORIO>
+   git clone PluginGrafanaProduction
+   cd PluginGrafanaProduction
   ```
 
 2. Instalacion de las dependencias del proyecto
-  ``` bash
-   npm install 
+  ```bash
+      npm install 
    ```
 
 3. Correr el proyecto en modo desarrollo 
-``` bash
+```bash
     npm run dev  
  ```
 
@@ -43,6 +43,14 @@ docker compose up  -d
     - Produccion estandar: Ingresa el valor de la produccion estandar.
     - JPH estandar: Ingresa el valor de JPH estandar 
 3. Para obtener la produccion y el JPH, ingresa las consultas necesarias para el centro de trabajo utilizando InfluxDB. Asegurate de que las consultas sean configuradas correctamente.
+
+
+
+## Consideraciones
+
+1. Agregar la consulta correspondiente para el valor de **Producción** en la **Serie A**.
+2. Agregar la consulta correspondiente para el valor de **JPH** en la **Serie B**.
+3. Asegurarse de que los datos estén ordenados de forma descendente (el valor actual debe ser el último de la lista).
 
 
 
